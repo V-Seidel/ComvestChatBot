@@ -1,4 +1,4 @@
 langchain
 streamlit 
 streamlit_chat
-BeautifulSoup
+bs4
