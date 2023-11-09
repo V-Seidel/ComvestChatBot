@@ -4,3 +4,4 @@ streamlit_chat
 bs4
 openai
 chromadb==0.3.29
+tiktoken
