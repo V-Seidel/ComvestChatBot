@@ -3,3 +3,4 @@ streamlit
 streamlit_chat
 bs4
 openai
+chromadb
