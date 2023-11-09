@@ -6,16 +6,16 @@ Este código implementa um chatbot que fornece respostas a perguntas relacionada
 Para testar o bot, basta possuir uma conta no Streamlit (possivel se conectar com qualquer conta do Google) no seguinte link: https://comvestchatbot.streamlit.app/
 
 ## Parte 1: Configuração e Inicialização ## 
-* Importações: O código começa importando os módulos e bibliotecas necessários. Alguns dos principais módulos importados incluem os, módulos do Langchain para carregar documentos, dividir texto, processar embeddings e criar um modelo de chat, bem como o módulo Streamlit para a interface do usuário.
+* Importações: O código começa importando os módulos e bibliotecas necessários.
 
 * Configuração da Chave da API OpenAI: A chave da API OpenAI é definida no ambiente como OPENAI_API_KEY.
 
 ## Parte 2: Preparação dos Dados ##
 * Carregamento da Base de Dados da Unicamp: A base de dados da Unicamp é carregada a partir de uma URL específica (https://www.pg.unicamp.br/norma/31594/0) usando o WebBaseLoader do Langchain.
 
-* Divisão de Texto em Chunks: Os documentos da base de dados são divididos em chunks (pedaços) de 1000 caracteres, com um overlap de 200 caracteres, usando o RecursiveCharacterTextSplitter. Essa etapa visa preparar os documentos para uma pesquisa mais eficaz.
+* Divisão de Texto em Chunks: Os documentos da base de dados são divididos em chunks (pedaços) de 1000 caracteres, com um overlap de 200 caracteres, usando o RecursiveCharacterTextSplitter.
 
-* Criação de um Vector Store: Os embeddings da OpenAI são usados para criar um vector store a partir dos documentos divididos. O vector store é nomeado "unicamp_base" e é persistido em um diretório específico.
+* Criação de um Vector Store: Os embeddings da OpenAI são usados para criar um vector store a partir dos documentos divididos. 
 
 ## Parte 3: Configuração do Chatbot ##
 * Template para o Prompt: É definido um template para o prompt usado pelo chatbot. O template inclui placeholders para contexto, histórico da conversa e a pergunta do usuário.
@@ -47,3 +47,9 @@ Para testar o bot, basta possuir uma conta no Streamlit (possivel se conectar co
 * Geração de Previsões: O chatbot é usado para gerar respostas para as perguntas de teste.
 
 * Comparação de Respostas: As respostas geradas pelo chatbot são comparadas com as respostas esperadas, e os resultados são exibidos.
+
+## O que pode ser melhorado? ## 
+
+* Criação de uma interface mostrando o documento fonte de onde a resposta do bot foi baseada.
+
+* Utilizar um vinculo com conta do Google para salvar todo o histórico de conversa de outros locais.
