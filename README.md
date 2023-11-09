@@ -2,6 +2,9 @@
 
 Este código implementa um chatbot que fornece respostas a perguntas relacionadas ao vestibular da Unicamp 2024. O chatbot utiliza a base de dados da Unicamp 2024 como fonte de informações. A seguir, vou fornecer uma documentação detalhada sobre o código:
 
+### Como testar o bot ### 
+Para testar o bot, basta possuir uma conta no Streamlit (possivel se conectar com qualquer conta do Google) no seguinte link: https://comvestchatbot.streamlit.app/
+
 ## Parte 1: Configuração e Inicialização ## 
 * Importações: O código começa importando os módulos e bibliotecas necessários. Alguns dos principais módulos importados incluem os, módulos do Langchain para carregar documentos, dividir texto, processar embeddings e criar um modelo de chat, bem como o módulo Streamlit para a interface do usuário.
 
